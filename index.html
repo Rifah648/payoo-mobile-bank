@@ -6,6 +6,8 @@
     <title>Payoo Mobile Bank</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ 
+</script>
 </head>
 <body class="bg-slate-800">
     <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
@@ -22,20 +24,21 @@
             <div class="hero-content flex-col lg:flex-row-reverse">
               
               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                <div class="card-body">
+                <form class="card-body">
                   <fieldset class="fieldset">
                     <label class="fieldset-label">Number</label>
-                    <input type="number" class="input" placeholder=" Enter Your Number" />
+                    <input value="01308589484" id="account-number" type="number" class="input" placeholder=" Enter Your Number" required/>
                     <label class="fieldset-label">4 Digit Pin</label>
-                    <input type="pin" class="input" placeholder="Enter 4 Digit Pin" />
+                    <input value="1234" id="account-pin" type="pin" class="input" placeholder="Enter 4 Digit Pin" required />
                     
-                    <button class="btn btn-neutral mt-4 rounded-2xl">Login</button>
+                    <button id="btn-login" class="btn btn-neutral mt-4 rounded-2xl">Login</button>
                   </fieldset>
-                </div>
+                </form>
               </div>
             </div>
           </div>
 
     </section>
+    <script src="script/login.js"></script>
 </body>
 </html>
